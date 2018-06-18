@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+   
+   
+<div class="container">
+       <div class="row" id="header">
+            <div class="col-2">
+
+            </div>
+            <div class="col-8">
+              <h1 id="h">THE GUESSING GAME</h1>
+            </div>
+            <div class="col-2">
+
+            </div>
+       </div>
+
+    <div class="row gameBox">  
+
+          <div class="col-3 infoBar" id="random">Number to match:</div>
+          <div class="col-3 number" id="gameNum">Random #</div>
+          <div class="col-3 infoBar" id="total">Your total score is:</div>
+          <div class="col-3 number" id="playerNum">Player Guess#</div>
+          
+          
+          
+
+
+          <div class="col-3 gameP" id="gp1"><img src="assets/images/blue.png"></div>
+          <div class="col-3 gameP" id="gp2"><img src="assets/images/green.png"></div>
+          <div class="col-3 gameP" id="gp3"><img src="assets/images/pink.png"></div>
+          <div class="col-3 gameP" id="gp4"><img src="assets/images/yellow.png"></div>
+
+    
+          <div class="col-6 score" >WINS</div>
+          <div class="col-6 score" >LOSSES</div>
+          <div class="col-6 scoreNumber " id="wins"></div>
+          <div class="col-6 scoreNumber " id="losses"></div>
+          
+          <div class="col-7 spacer">Each round, the cups will have a random number assigned to them.<br>
+                                     Click the cups to figure out thier value, it will be added to your score each time.<br>
+                                     To win the game, match your score to the random number generated above the green cup.<br>
+                                     Best of 5 wins.  Good luck!
+                                     
+           
+             </div>
+     </div>
+   
+   
+   
+</div>  
+    
+    <script src="./assets/javascript/game.js"></script>
+    
+    
+</body>
+</html>
+
+
+

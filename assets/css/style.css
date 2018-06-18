@@ -1,0 +1,69 @@
+#header{
+    color: red;
+    text-align: center;
+    padding: 50px;
+
+}
+
+#h{
+    font-size: 75px;
+}
+
+
+.container{
+    border: solid 0px;
+/*    border-color: blue;*/
+    background-color:;    
+}
+
+.gameBox{
+     border-top: solid 1px;
+     border-color:#e3d7d7;
+     font-size: 25px;
+}
+
+.infoBar{
+    border: solid px;
+/*    border-color:purple;*/
+    padding: 15px;
+    text-align: center;
+    
+}
+
+.number{
+    border: solid px;
+/*    border-color:red;*/
+    padding: 15px;
+    text-align: center;
+    
+}
+
+.gameP{
+    border: solid 0px;
+    background-color: white;
+    border-color:green;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-align: center;
+    
+}
+
+
+.score{
+    border-top: solid 1px;
+    border-color:#e3d7d7;
+    padding: 20px;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.scoreNumber{
+    text-align: center;
+}
+
+.spacer{
+    margin-top: 60px;
+    margin-left: 240px;
+    font-size: 15px;
+    color: rgba(67, 181, 57, 0.55);
+}

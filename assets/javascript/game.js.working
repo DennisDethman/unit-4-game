@@ -25,10 +25,11 @@ var wins = 0;
 //reset
 //i'm sure there's more
 $(document).ready(function(){
-       
+    
+    
     function start (){
-        gameNumber = Math.floor(Math.random() * 120) + 1;
-//        console.log("random number is " + gameNumber);   //good to go
+        gameNumber = Math.floor(Math.random() * 30) + 1;
+        console.log("random number is " + gameNumber);   //good to go
         
         cup1 = Math.floor(Math.random() * 12) + 1;
 //        console.log("cup1 = " + cup1);                 //works, confirmed 1-12
@@ -43,11 +44,27 @@ $(document).ready(function(){
         $("#gameNum").html(gameNumber);
         
         
-//        $("#gp1").html(cup1);
-//        $("#gp2").html(cup2);
-//        $("#gp3").html(cup3);
-//        $("#gp4").html(cup4);
+        $("#gp1").html(cup1);
+        $("#gp2").html(cup2);
+        $("#gp3").html(cup3);
+        $("#gp4").html(cup4);
         
+        
+        //clicks work! need to add images, start keeping score and stuff...
+        
+//        $("#gp1").on("click", function() {
+//            
+//            console.log("cup 1 = " + cup1 )
+//        });
+//        $("#gp2").on("click", function() {
+//            console.log("cup 2 = " + cup2)
+//        });
+//        $("#gp3").on("click", function() {
+//            console.log("cup 3 = " + cup3)
+//        });
+//        $("#gp4").on("click", function() {
+//            console.log("cup 4 = " + cup4)
+//        });
     }
        
  //**********************************************************************************
@@ -57,28 +74,28 @@ $(document).ready(function(){
                cupValue += cup1;
                $("#playerNum").html(cupValue);
                checkScore();
-//               console.log("cup val = " + cupValue)
+               console.log("cup val = " + cupValue)
            })
         
            $("#gp2").on("click", function() {
                cupValue += cup2;
                $("#playerNum").html(cupValue);
                checkScore();
-//               console.log("cup val = " + cupValue)
+               console.log("cup val = " + cupValue)
            })
         
            $("#gp3").on("click", function() {
                cupValue += cup3;
                $("#playerNum").html(cupValue);
                checkScore();
-//               console.log("cup val = " + cupValue)
+               console.log("cup val = " + cupValue)
            })
         
            $("#gp4").on("click", function() {
                cupValue += cup4;
                $("#playerNum").html(cupValue);
                checkScore();
-//               console.log("cup val = " + cupValue)
+               console.log("cup val = " + cupValue)
            })
         
        } 
@@ -90,7 +107,7 @@ $(document).ready(function(){
         if (cupValue === gameNumber){
             wins++;
             $("#wins").html(wins);
-//            console.log("wins = " + wins)
+            console.log("wins = " + wins)
             cupValue = 0;
             start();
         }
@@ -98,16 +115,15 @@ $(document).ready(function(){
         if (cupValue > gameNumber){
             losses++;
             $("#losses").html(losses);
-//            console.log("losses = " + losses)
+            console.log("losses = " + losses)
             cupValue = 0;
             start();
         }
         
-        if ((losses === 5) || (wins === 5)) {
+        if ((losses > 2) || (wins > 2 )) {
             resetGame();        
         }
         
-
     }
     
  //**********************************************************************************   
@@ -115,11 +131,10 @@ $(document).ready(function(){
     function resetGame () {
         cupValue = 0;
         
-        losses = 0;
-        $("#losses").html(losses);
-        wins = 0;
-        $("#wins").html(wins);
-
+        losses = -1;
+        wins = -1;
+        start();
+        
     }
     
 start(); 
