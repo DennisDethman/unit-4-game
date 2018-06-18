@@ -1,12 +1,12 @@
 #header{
     color: red;
     text-align: center;
-    padding: 50px;
+    padding: 30px;
 
 }
 
 #h{
-    font-size: 75px;
+    font-size: 55px;
 }
 
 
@@ -45,6 +45,7 @@
     padding-top: 40px;
     padding-bottom: 60px;
     text-align: center;
+    cursor:help;
     
 }
 

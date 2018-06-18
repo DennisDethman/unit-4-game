@@ -19,6 +19,7 @@ var wins = 0;
 //**********************************************************************************
 //TODO:
 //five random numbers.  ---- one for game, 4 for player
+//19-120 for match, 1-12 for player
 //add crystal numbers together
 //if win/ if lose
 //else? -- max wins/losses have been reached, restart game
@@ -27,7 +28,7 @@ var wins = 0;
 $(document).ready(function(){
        
     function start (){
-        gameNumber = Math.floor(Math.random() * 120) + 1;
+        gameNumber = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
 //        console.log("random number is " + gameNumber);   //good to go
         
         cup1 = Math.floor(Math.random() * 12) + 1;
